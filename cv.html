@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Oscar Nava Jiménez</title>
+    <style>
+        :root {
+            --primary-blue: #1a3a5f;
+            --secondary-blue: #2a5a8f;
+            --text-dark: #333;
+            --text-muted: #666;
+            --bg-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--primary-blue);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            font-size: 2.4em;
+            color: var(--primary-blue);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .profile-info h2 {
+            margin: 5px 0 15px 0;
+            font-weight: 500;
+            color: var(--secondary-blue);
+            font-size: 1.25em;
+        }
+
+        .contact-details {
+            font-size: 0.9em;
+            color: var(--text-muted);
+        }
+
+        .contact-details a {
+            color: var(--secondary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .photo-area {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-gray);
+            color: #ccc;
+            font-weight: bold;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Sections */
+        section { margin-bottom: 35px; }
+
+        h3 {
+            font-size: 1.1em;
+            text-transform: uppercase;
+            color: var(--primary-blue);
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .entry { margin-bottom: 20px; }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+
+        .entry-sub {
+            color: var(--secondary-blue);
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        ul { padding-left: 20px; margin: 10px 0; }
+        li { margin-bottom: 8px; font-size: 0.95em; }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-item {
+            background: var(--bg-gray);
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+
+        .skill-item strong {
+            display: block;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 40px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .cv-container { box-shadow: none; border: none; width: 100%; max-width: 100%; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <div class="profile-info">
+            <h1>OSCAR NAVA JIMÉNEZ</h1>
+            <h2>SW Engineer in Automotive Industry</h2>
+            <div class="contact-details">
+                <a href="mailto:onavaj@gmail.com">onavaj@gmail.com</a> | +5543438049<br>
+                <a href="https://www.linkedin.com/in/oscar-nava-jimenez" target="_blank">linkedin.com/in/oscar-nava-jimenez</a>
+            </div>
+        </div>
+        <!-- <div class="photo-area">
+            
+        </div> -->
+    </header>
+
+    <section>
+        <h3>Professional Experience</h3>
+        <div class="entry">
+            <div class="entry-header">
+                <span>Ford Motor Company</span>
+                <span>April 2022 - Currently</span>
+            </div>
+            <div class="entry-sub">XiL Engineer</div>
+            <ul>
+                <li>Successfully led a team of 5 direct engineer reports into more than 12 projects for automated testing in complex electronical and software environments.</li>
+                <li>Complete understanding, design and implementation capabilities for HiL challenges involving automotive protocols as CAN, DoIP, flashing processes, applied AI for computational vision, LLMs, deep learning, toolchains using APIs, cloud computing, web design, etc.</li>
+                <li>Result driven, as the target and results of all of my team efforts was to successfully automate test cases, driving tangible value to the company.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <strong>Software Engineering</strong>
+                Requirement Analysis, Architecture, OOP, Agile (Jira/Github), CI/CD, Pipeline (MSSQL, GCP, Azure, AWS).
+            </div>
+            <div class="skill-item">
+                <strong>Automotive & Embedded</strong>
+                Bootloaders, Flashing, PCB design, Bare metal development, CAN, DoIP, NI (TestStand & Veristand).
+            </div>
+            <div class="skill-item">
+                <strong>AI & Data Science</strong>
+                Machine Learning (Supervised/Unsupervised), Deep Learning, LLMs, Computer Vision, Python, Tableau, Alteryx.
+            </div>
+            <div class="skill-item">
+                <strong>Web & Testing</strong>
+                Web development (Full Stack), REST API services, Testing frameworks, ISTQB.
+            </div>
+        </div>
+    </section>
+
+    <div class="flex-container">
+        <section style="flex: 2;">
+            <h3>Education</h3>
+            <div class="entry">
+                <div class="entry-header">Ms. Applied Artificial Intelligence</div>
+                <div class="entry-sub">Tecnológico de Monterrey | 2023 - 2025</div>
+            </div>
+            <div class="entry">
+                <div class="entry-header">Bs. Chemical Engineering</div>
+                <div class="entry-sub">Tecnológico de Monterrey | 2017 - 2021</div>
+                <p style="font-size: 0.9em; margin-top: 5px;">
+                    Minor in administration (Cum Laude).<br>
+                    Ceneval National Award for Academic Excellence.
+                </p>
+            </div>
+        </section>
+
+        <section style="flex: 1;">
+            <h3>Languages</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>English:</strong> C1 (Professional)</li>
+                <li><strong>Spanish:</strong> Native</li>
+
+                <li><strong>German:</strong> A2</li>
+            </ul>
+        </section>
+    </div>
+
+    <section>
+        <h3>Certifications & Courses</h3>
+        <div class="skills-grid">
+           
+            <div class="skill-item">
+                <strong>Data Science for Business</strong>
+                Tecnológico de Monterrey (Nov 2021).
+            </div>
+             <div class="skill-item">
+                <strong>Tiny ML - EdX @ Harvard</strong>
+                Tiny Machine Learning Techniques (2023).
+            </div>
+            <div class="skill-item" style="grid-column: span 2;">
+                <strong>ISO Internal Auditor (Applus 2021)</strong>
+                ISO 45001:2018 (Occupational Health & Safety) & ISO 22000:2018 (Food Safety).
+            </div>
+            
+        </div>
+    </section>
+</div>
+
+</body>
+</html> 
